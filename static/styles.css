@@ -1,0 +1,141 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FFFAA0;
+    min-height: 100vh; 
+}
+img{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 10rem;
+    
+}
+#header-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+#header-2 #changing-text{
+    margin-left: 0.15em;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+#header-2, #static-text{
+    height: 90px;
+   color: #f39f86;
+    font-size: 60px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin-left: 0.75em;
+}
+
+#changing-text li{
+    list-style: none;
+    background: -webkit-linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 12s steps(4) infinite;
+
+    
+
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+
+    }
+}
+#changing-text li{
+    position: relative;
+
+}
+#changing-text li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#FFFAA0;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing{
+    40%,
+    60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+span{
+    text-transform: uppercase;
+    color: darkred;
+    padding: 3px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+#header-2{
+    font-size: 60px;
+    min-width: 60rem;
+}
+#header-3{
+    margin-top: 5rem;
+    
+}
+  
+#header3 {
+
+    flex-basis: 50%;
+}
+#newsletter{
+    font-size: 40px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
+
+hr{
+    border: none;
+    height: 3px;
+    background-color: #E4CD05;
+    
+}
+
+#signup{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+}
+#main{
+    text-align: center;
+}
+input{
+    margin-top: 1vh;
+    height: 3.5vh;
+
+}
+
+button{
+    margin-left: 2vw;
+    margin-top: -0.5vh;
+}
+.github{
+    width: 2.5vw;
+    height: 5vh;
+}
